@@ -11,7 +11,7 @@ const section = {
 
 export default function Skills() {
   return (
-    <section className="my-28">
+    <section className="my-28" id="skills">
       <div className="container mx-auto p-8 md:p-0">
         <motion.div
           className="md:grid md:grid-cols-12 gap-20"

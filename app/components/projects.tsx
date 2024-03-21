@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import ProjectCard from "./project-card";
+import work from "../data/work.js";
 
 const section = {
   hidden: { opacity: 0 },
@@ -11,7 +12,7 @@ const section = {
 };
 export default function Projects() {
   return (
-    <section className="my-28">
+    <section className="my-28" id="work">
       <motion.div
         className="container mx-auto p-8"
         variants={section}
@@ -28,9 +29,12 @@ export default function Projects() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-12 mt-20 gap-4">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          {work.map((project, index) => (
+            <ProjectCard
+              key={index}
+              {...project}
+            />
+          ))}
         </div>
         <div className="flex items-center justify-center mt-16">
           <button className="border-[1px] border-brand-400 font-mono text-brand-400 text-sm px-6 py-4">

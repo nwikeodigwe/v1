@@ -11,8 +11,8 @@ const navLinks = [
     title: "About",
   },
   {
-    href: "#experience",
-    title: "Experience",
+    href: "#skills",
+    title: "Skills",
   },
   {
     href: "#work",
@@ -142,7 +142,7 @@ export default function Header() {
       </header>
       <AnimatePresence>
         {isOpen && (
-          <motion.div className="fixed flex justify-end w-full h-full top-0 backdrop-blur-sm overflow-hidden">
+          <motion.div className="fixed flex justify-end w-full h-full top-0 backdrop-blur-sm overflow-hidden" onClick={() => setIsOpen(false)}>
             <motion.div
               className="bg-secondary-900 h-full w-[80%] flex flex-col justify-between p-10"
               initial={{ x: "100vw" }}
@@ -152,7 +152,7 @@ export default function Header() {
             >
               <div className="flex justify-end">
                 <motion.span
-                  whileTap={{ rotate: 360 }}
+                  whileTap={{ rotate: -180 }}
                   transition={{ duration: 0.5 }}
                 >
                   <RxCross1

@@ -12,7 +12,7 @@ const section = {
 
 export default function Contact() {
   return (
-    <section className="my-28">
+    <section className="my-28" id="contact">
       <motion.div
         className="container mx-auto p-8 md:p-0"
         variants={section}
