@@ -13,7 +13,13 @@ interface ProjectCardProps {
   tags: string[];
 }
 
-export default function ProjectCard({title, description, git, link, tags}: ProjectCardProps) {
+export default function ProjectCard({
+  title,
+  description,
+  git,
+  link,
+  tags,
+}: ProjectCardProps) {
   return (
     <motion.div
       className="col-span-4 p-8 flex flex-col justify-between shadow-lg rounded-md bg-secondary-900"
@@ -24,21 +30,26 @@ export default function ProjectCard({title, description, git, link, tags}: Proje
           <CiFolderOn className="text-4xl text-brand-400" />
         </div>
         <div className="flex items-center gap-2">
-          <Link href={git}><FiGithub className="text-xl hover:text-brand-500 transition duration-100" /></Link>
-          <Link href={link}><GoLinkExternal className="text-xl hover:text-brand-500 transition duration-100" /></Link>
+          <Link href={git}>
+            <FiGithub className="text-xl hover:text-brand-500 transition duration-100" />
+          </Link>
+          {link && (
+            <Link href={link}>
+              <GoLinkExternal className="text-xl hover:text-brand-500 transition duration-100" />
+            </Link>
+          )}
         </div>
       </div>
       <div>
-        <h2 className="font-bold mt-6 text-2xl">
-        { title }
-      </h2>
-      <p className="text-gray-300 mt-2">
-        { description }
-      </p>
+        <h2 className="font-bold mt-6 text-2xl">{title}</h2>
+        <p className="text-gray-300 mt-2">{description}</p>
       </div>
       <div className="flex gap-2 mt-6">
         {tags.map((tag, index) => (
-          <span key={index} className="text-brand-500 text-xs font-mono border-[1px] border-brand-500 rounded-sm py-1 px-2">
+          <span
+            key={index}
+            className="text-brand-500 text-xs font-mono border-[1px] border-brand-500 rounded-sm py-1 px-2"
+          >
             {tag}
           </span>
         ))}

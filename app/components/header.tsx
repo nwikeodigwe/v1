@@ -4,6 +4,8 @@ import { RxCross1 } from "react-icons/rx";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import Link from "next/link";
 import { useState } from "react";
+import logo from "@/public/logo.png";
+import Image from "next/image";
 
 const navLinks = [
   {
@@ -49,17 +51,11 @@ const item = {
   hidden: { y: "-100vh" },
   show: {
     y: 0,
-    transition: {
-      type: "spring",
-      mass: 0.4,
-      damping: 8,
-    },
   },
-  whileHover: {
-    y: -5,
-    transition: {
-      ease: "easeInOut",
-    },
+  transition: {
+    type: "spring",
+    mass: 0.4,
+    damping: 8,
   },
 };
 
@@ -90,6 +86,24 @@ const button = {
   },
 };
 
+const logo_variant = {
+  hidden: {
+    opacity: 0,
+    y: "-100vh",
+  },
+  show: {
+    transition: {
+      delay: 0.2,
+      duration: 1.5,
+      type: "spring",
+      mass: 0.4,
+      damping: 8,
+    },
+    opacity: 1,
+    y: 0,
+  },
+};
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   console.log(isOpen);
@@ -97,9 +111,9 @@ export default function Header() {
     <>
       <header className="py-8 font-mono text-sm static top-0 left-0">
         <div className="flex px-10 items-center justify-between">
-          <div>
-            <h1>Logo</h1>
-          </div>
+          <motion.div variants={logo_variant} initial="hidden" animate="show">
+            <Image src={logo} alt="logo" width={50} height={20} />
+          </motion.div>
           <div>
             <HiOutlineMenuAlt1
               className="text-3xl text-brand-500 md:hidden"
@@ -110,13 +124,19 @@ export default function Header() {
             <motion.ul
               className="gap-12 list-decimal text-brand-500 hidden md:flex items-center"
               variants={container}
+              initial="hidden"
               animate="show"
             >
               {navLinks.map((link) => (
                 <motion.li
                   key={link.href}
                   variants={item}
-                  whileHover={{ y: -5, transition: { ease: "easeInOut" } }}
+                  whileHover={{
+                    y: -5,
+                    transition: {
+                      ease: "easeInOut",
+                    },
+                  }}
                 >
                   <Link
                     href={link.href}
@@ -142,7 +162,10 @@ export default function Header() {
       </header>
       <AnimatePresence>
         {isOpen && (
-          <motion.div className="fixed flex justify-end w-full h-full top-0 backdrop-blur-sm overflow-hidden" onClick={() => setIsOpen(false)}>
+          <motion.div
+            className="fixed flex justify-end w-full h-full top-0 backdrop-blur-sm overflow-hidden"
+            onClick={() => setIsOpen(false)}
+          >
             <motion.div
               className="bg-secondary-900 h-full w-[80%] flex flex-col justify-between p-10"
               initial={{ x: "100vw" }}

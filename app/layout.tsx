@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Theme } from "@radix-ui/themes";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import "./style.css";
 
@@ -16,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`bg-background text-gray-200 font-sans`}>
+        <Analytics />
         <Theme>{children}</Theme>
       </body>
     </html>
