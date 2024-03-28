@@ -53,7 +53,7 @@ const button = {
 
 export default function Hero() {
   return (
-    <section className="h-screen flex flex-col md:justify-center p-10 md:p-0">
+    <section className="h-3/4 md:h-screen flex flex-col md:justify-center p-10 md:p-0">
       <motion.div
         className="container flex flex-col mx-auto gap-2"
         variants={container}
