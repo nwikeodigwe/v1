@@ -3,8 +3,8 @@ const work = [
     title: "Game hub utilizing RAWG API and React",
     description:
       "A game hub that allows users to search for games, view game details, and save games to their favorites list. Utilizes the RAWG API to fetch game data.",
-    git: "https://game-dev-six.vercel.app/",
-    link: "https://github.com/nwikeodigwe/Game-dev",
+    git: "https://github.com/nwikeodigwe/Game-dev ",
+    link: "https://game-dev-six.vercel.app/",
     tags: ["React", "HTML", "Chakra UI"],
   },
   {
