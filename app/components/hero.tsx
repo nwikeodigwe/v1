@@ -79,7 +79,7 @@ export default function Hero() {
           I build things for the web
         </motion.h2>
         <motion.p
-          className="text-sm md:text-2xl text-gray-300 md:w-2/3"
+          className="text-sm md:text-2xl text-gray-300 md:w-3/4"
           variants={children}
         >
           I am software engineer, dedicated to crafting exceptional digital

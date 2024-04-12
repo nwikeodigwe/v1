@@ -66,7 +66,7 @@ export default function Footer() {
             </Link>
           </motion.li>
           <motion.li whileHover={{ y: -5 }} transition={{ ease: "easeInOut" }}>
-            <Link href={"https://linkedin.com/nwikeodigwe"} target="_blank">
+            <Link href={"https://linkedin.com/in/nwikeodigwe"} target="_blank">
               Linkedin
             </Link>
           </motion.li>

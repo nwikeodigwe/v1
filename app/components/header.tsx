@@ -149,7 +149,7 @@ export default function Header() {
                 </motion.li>
               ))}
             </motion.ul>
-            <Link href="/resume.pdf">
+            <Link href="/resume.pdf" target="_blank">
               <motion.button
                 className="border-[1px] border-brand-500 text-brand-500 px-4 py-2 rounded-sm p-3"
                 variants={button}
@@ -199,7 +199,7 @@ export default function Header() {
                   </li>
                 ))}
               </ul>
-              <Link href="/resume.pdf">
+              <Link href="/resume.pdf" target="_blank">
                 <button className="border-[1px] border-brand-500 text-brand-500 px-8 py-2 rounded-sm">
                   Resume
                 </button>
