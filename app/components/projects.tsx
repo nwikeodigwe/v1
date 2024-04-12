@@ -14,7 +14,7 @@ export default function Projects() {
   return (
     <section className="my-28" id="work">
       <motion.div
-        className="container mx-auto p-8"
+        className="container md:max-w-screen-lg mx-auto p-8"
         variants={section}
         initial="hidden"
         whileInView="show"
@@ -30,10 +30,7 @@ export default function Projects() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-12 mt-20 gap-4">
           {work.map((project, index) => (
-            <ProjectCard
-              key={index}
-              {...project}
-            />
+            <ProjectCard key={index} {...project} />
           ))}
         </div>
         <div className="flex items-center justify-center mt-16">

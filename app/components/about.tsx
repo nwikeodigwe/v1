@@ -11,7 +11,7 @@ const section = {
 export default function About() {
   return (
     <section className="mb-28" id="about">
-      <div className="container mx-auto p-10 md:p-0">
+      <div className="container md:max-w-screen-lg mx-auto p-10 md:p-0">
         <motion.div
           className="md:grid grid-cols-12 gap-16"
           variants={section}
@@ -26,23 +26,45 @@ export default function About() {
           </div>
           <div className="col-span-9 flex flex-col gap-6 font-extralight text-gray-300 ml-8 mt-8 md:mt-0">
             <p>
-              I&apos;m currently an Engineer at Upstatement building things for
-              the web with some awesome people. I recently graduated from
-              Northeastern University after completing three awesome six-month
-              co-ops at MullenLowe U.S., Starry, and Apple Music.
+              Hey there! I&apos;m{" "}
+              <span className="font-semibold text-gray-100">Nwike Odigwe</span>,
+              a passionate software engineer fueled by curiosity and creativity.
+              With a solid technical education and diverse experience, I thrive
+              on exploring new horizons and bringing ideas to life using various
+              tech stacks.
             </p>
             <p>
-              As a software engineer, I enjoy bridging the gap between
-              engineering and design — combining my technical knowledge with my
-              keen eye for design to create a beautiful product. My goal is to
-              always build applications that are scalable and efficient under
-              the hood while providing engaging, pixel-perfect user experiences.
+              My journey into software engineering began with a simple curiosity
+              about{" "}
+              <span className="font-semibold text-gray-100">
+                video game development
+              </span>
+              , leading me to delve into{" "}
+              <span className="font-semibold text-gray-100">Java</span> and
+              beyond. Over the years, I&apos;ve honed my skills across different
+              stacks, driven by an insatiable desire to push boundaries and
+              discover new possibilities.
             </p>
             <p>
-              When I&apos;m not in front of a computer screen, I&apos;m probably
-              snowboarding, cruising around on my penny board, or crossing off
-              another item on my bucket list.
+              These days, my focus lies in crafting elegant and accessible
+              solutions for complex systems, always with an unwavering
+              commitment to user satisfaction and inclusivity. I&apos;ve had the
+              privilege of contributing to the developmen of a{" "}
+              <span className="font-semibold text-gray-100">
+                virtual home startup , real estate ventures, and online
+                education platforms{" "}
+              </span>
+              . I particularly enjoy the intersection of design and engineering,
+              where creativity meets functionality.
             </p>
+            <p>
+              Beyond coding, you&apos;ll find me immersing myself in the local
+              business scene, collaborating on unique web designs. When I&apos;m
+              not in front of my computer, I&apos;m out bouldering,
+              skateboarding, diving into a good book, or simply enjoying quality
+              time with friends.
+            </p>
+            <p>Let&apos;s connect and create something remarkable together!</p>
           </div>
         </motion.div>
       </div>

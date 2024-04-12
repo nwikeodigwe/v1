@@ -55,7 +55,7 @@ export default function Hero() {
   return (
     <section className="h-3/4 md:h-screen flex flex-col md:justify-center p-10 md:p-0">
       <motion.div
-        className="container flex flex-col mx-auto gap-2"
+        className="container md:max-w-screen-lg flex flex-col mx-auto gap-2"
         variants={container}
         initial="hidden"
         animate="show"
@@ -82,9 +82,11 @@ export default function Hero() {
           className="text-sm md:text-2xl text-gray-300 md:w-2/3"
           variants={children}
         >
-          I am a software engineer specializing in building (and occasionally
-          desingning) exceptional digital Experiences. Currently, I am focused
-          on building accessible, human-centered products
+          I am software engineer, dedicated to crafting exceptional digital
+          experiences while occasionally delving into design. My primary focus
+          lies in the development of accessible, human-centered products,
+          prioritizing user satisfaction and inclusivity at every stage of the
+          process.
         </motion.p>
         <div>
           <Link href="mailto:nwikeodigwe@outlook.com">

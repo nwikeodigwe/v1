@@ -111,9 +111,11 @@ export default function Header() {
     <>
       <header className="py-8 font-mono text-sm static top-0 left-0">
         <div className="flex px-10 items-center justify-between">
-          <motion.div variants={logo_variant} initial="hidden" animate="show">
-            <Image src={logo} alt="logo" width={50} height={20} />
-          </motion.div>
+          <Link href="/">
+            <motion.div variants={logo_variant} initial="hidden" animate="show">
+              <Image src={logo} alt="logo" width={50} height={20} />
+            </motion.div>
+          </Link>
           <div>
             <HiOutlineMenuAlt1
               className="text-3xl text-brand-500 md:hidden"
@@ -147,16 +149,17 @@ export default function Header() {
                 </motion.li>
               ))}
             </motion.ul>
-
-            <motion.button
-              className="border-[1px] border-brand-500 text-brand-500 px-4 py-2 rounded-sm p-3"
-              variants={button}
-              initial="hidden"
-              animate="show"
-              whileHover="hover"
-            >
-              Resume
-            </motion.button>
+            <Link href="/resume.pdf">
+              <motion.button
+                className="border-[1px] border-brand-500 text-brand-500 px-4 py-2 rounded-sm p-3"
+                variants={button}
+                initial="hidden"
+                animate="show"
+                whileHover="hover"
+              >
+                Resume
+              </motion.button>
+            </Link>
           </div>
         </div>
       </header>
@@ -196,9 +199,11 @@ export default function Header() {
                   </li>
                 ))}
               </ul>
-              <button className="border-[1px] border-brand-500 text-brand-500 px-8 py-2 rounded-sm">
-                Resume
-              </button>
+              <Link href="/resume.pdf">
+                <button className="border-[1px] border-brand-500 text-brand-500 px-8 py-2 rounded-sm">
+                  Resume
+                </button>
+              </Link>
             </motion.div>
           </motion.div>
         )}
