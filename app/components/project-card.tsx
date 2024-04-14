@@ -44,7 +44,7 @@ export default function ProjectCard({
         <h2 className="font-bold mt-6 text-2xl">{title}</h2>
         <p className="text-gray-300 mt-2">{description}</p>
       </div>
-      <div className="flex gap-2 mt-6">
+      <div className="flex flex-col lg:flex-row gap-2 mt-6">
         {tags.map((tag, index) => (
           <span
             key={index}
