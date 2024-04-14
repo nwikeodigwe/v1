@@ -110,7 +110,7 @@ export default function Header() {
   return (
     <>
       <div className="py-8 font-mono text-sm static top-0 left-0">
-        <div className="container max-w-screen-sm md:max-w-screen-xl flex px-10 mx-auto items-center justify-between">
+        <div className="container max-w-screen-sm md:max-w-screen-2xl flex px-10 mx-auto items-center justify-between">
           <Link href="/">
             <motion.div variants={logo_variant} initial="hidden" animate="show">
               <Image src={logo} alt="logo" width={50} height={20} />

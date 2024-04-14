@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <footer className="my-5">
       <motion.div
-        className="container lg:flex max-w-screen-sm  md:max-w-screen-lg px-8 mx-auto md:items-center justify-between"
+        className="container lg:flex px-8 mx-auto md:max-w-screen-2xl  md:items-center justify-between"
         variants={section}
         initial="hidden"
         whileInView="show"
