@@ -12,23 +12,23 @@ const section = {
 export default function Skills() {
   return (
     <section className="my-28" id="skills">
-      <div className="container md:max-w-screen-md mx-auto p-8 md:p-0">
+      <div className="container  p-10 mx-auto">
         <motion.div
-          className="md:grid md:grid-cols-12 gap-20"
+          className="md:grid md:grid-cols-3 lg:grid-cols-12 gap-20"
           variants={section}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
         >
-          <div className="col-span-3">
+          <div className="md:col-span-1 lg:col-span-3">
             <h2 className="uppercase md:text-right text-xl font-bold text-brand-400 tracking-wider">
               Skills
             </h2>
           </div>
-          <div className="col-span-9 mt-8 md:mt-0">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 ml-8 md:ml-0">
+          <div className="md:col-span-2 lg:col-span-9 mt-8 md:mt-0">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 ml-8 md:ml-0">
               <div className="col-span-1 flex flex-col">
-                <h2 className="uppercase font-bold text-xl tracking-wide">
+                <h2 className="uppercase font-bold text-md md:text-xl tracking-wide">
                   Languages
                 </h2>
                 <div className="text-gray-300">
@@ -43,7 +43,7 @@ export default function Skills() {
                 </div>
               </div>
               <div className="col-span-1 flex flex-col">
-                <h2 className="uppercase font-bold text-xl tracking-wide">
+                <h2 className="uppercase font-bold text-md md:text-xl tracking-wide">
                   Frameworks
                 </h2>
                 <div className="text-gray-300">
@@ -58,7 +58,7 @@ export default function Skills() {
                 </div>
               </div>
               <div className="col-span-1 flex flex-col">
-                <h2 className="uppercase font-bold text-xl tracking-wide">
+                <h2 className="uppercase font-bold text-md md:text-xl tracking-wide">
                   Tools
                 </h2>
                 <div className="text-gray-300">
@@ -73,7 +73,7 @@ export default function Skills() {
                 </div>
               </div>
               <div className="col-span-1 flex flex-col">
-                <h2 className="uppercase font-bold text-xl tracking-wide">
+                <h2 className="uppercase font-bold text-md md:text-xl tracking-wide">
                   Design
                 </h2>
                 <div className="text-gray-300">

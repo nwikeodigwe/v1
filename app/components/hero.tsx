@@ -55,7 +55,7 @@ export default function Hero() {
   return (
     <section className="h-3/4 md:h-screen flex flex-col md:justify-center p-10 md:p-0">
       <motion.div
-        className="container md:max-w-screen-lg flex flex-col mx-auto gap-2"
+        className="container max-w-screen-sm sm:max-w-screen-lg mx-auto flex flex-col p-8 gap-2"
         variants={container}
         initial="hidden"
         animate="show"

@@ -14,7 +14,7 @@ export default function Contact() {
   return (
     <section className="my-28" id="contact">
       <motion.div
-        className="container md:max-w-screen-lg mx-auto p-8 md:p-0"
+        className="container sm:max-w-screen-lg mx-auto p-8 md:p-0"
         variants={section}
         initial="hidden"
         whileInView="show"

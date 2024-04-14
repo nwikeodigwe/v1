@@ -11,7 +11,7 @@ const section = {
 export default function About() {
   return (
     <section className="mb-28" id="about">
-      <div className="container md:max-w-screen-lg mx-auto p-10 md:p-0">
+      <div className="container max-w-screen-sm sm:max-w-screen-lg mx-auto p-8">
         <motion.div
           className="md:grid grid-cols-12 gap-16"
           variants={section}

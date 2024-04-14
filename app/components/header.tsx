@@ -109,8 +109,8 @@ export default function Header() {
   console.log(isOpen);
   return (
     <>
-      <header className="py-8 font-mono text-sm static top-0 left-0">
-        <div className="flex px-10 items-center justify-between">
+      <div className="py-8 font-mono text-sm static top-0 left-0">
+        <div className="container max-w-screen-sm md:max-w-screen-xl flex px-10 mx-auto items-center justify-between">
           <Link href="/">
             <motion.div variants={logo_variant} initial="hidden" animate="show">
               <Image src={logo} alt="logo" width={50} height={20} />
@@ -162,7 +162,7 @@ export default function Header() {
             </Link>
           </div>
         </div>
-      </header>
+      </div>
       <AnimatePresence>
         {isOpen && (
           <motion.div

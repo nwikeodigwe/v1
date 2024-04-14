@@ -14,7 +14,7 @@ export default function Projects() {
   return (
     <section className="my-28" id="work">
       <motion.div
-        className="container md:max-w-screen-lg mx-auto p-8"
+        className="container max-w-screen-sm sm:max-w-screen-lg mx-auto p-8"
         variants={section}
         initial="hidden"
         whileInView="show"

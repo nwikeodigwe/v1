@@ -15,18 +15,18 @@ const section = {
 };
 export default function Footer() {
   return (
-    <footer className="p-8 my-5">
+    <footer className="my-5">
       <motion.div
-        className="md:flex  md:items-center justify-between px-7"
+        className="container lg:flex max-w-screen-sm  md:max-w-screen-lg px-8 mx-auto md:items-center justify-between"
         variants={section}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
       >
-        <h2 className="text-xl text-center md:text-left font-bold">
+        <h2 className="text-xl text-center font-bold">
           Developed by Nwike Odigwe. 2024
         </h2>
-        <ul className="flex md:hidden gap-4 justify-center mt-4 text-brand-500">
+        <ul className="flex lg:hidden gap-4 justify-center mt-4 text-brand-500">
           <li>
             <Link href={"mailto:nwikeodigwe@outlook.com"}>
               <TfiEmail className="text-2xl" />
@@ -56,7 +56,7 @@ export default function Footer() {
             </Link>
           </li>
         </ul>
-        <ul className="hidden md:flex justify-center md:justify-right gap-10 tracking-wider uppercase text-blue-500 mt-5 md:mt-0">
+        <ul className="hidden lg:flex justify-center md:justify-right gap-10 tracking-wider uppercase text-blue-500 mt-5 md:mt-0">
           <motion.li whileHover={{ y: -5 }} transition={{ ease: "easeInOut" }}>
             <Link href={"mailto:nwikeodigwe@outlook.com"}>Email</Link>
           </motion.li>
