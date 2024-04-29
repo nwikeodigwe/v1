@@ -49,7 +49,7 @@ export default function About() {
               These days, my focus lies in crafting elegant and accessible
               solutions for complex systems, always with an unwavering
               commitment to user satisfaction and inclusivity. I&apos;ve had the
-              privilege of contributing to the developmen of a{" "}
+              privilege of contributing to the development of a{" "}
               <span className="font-semibold text-gray-100">
                 virtual home startup , real estate ventures, and online
                 education platforms{" "}

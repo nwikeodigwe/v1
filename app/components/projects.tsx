@@ -33,11 +33,11 @@ export default function Projects() {
             <ProjectCard key={index} {...project} />
           ))}
         </div>
-        <div className="flex items-center justify-center mt-16">
+        {/* <div className="flex items-center justify-center mt-16">
           <button className="border-[1px] border-brand-400 font-mono text-brand-400 text-sm px-6 py-4">
             Show More
           </button>
-        </div>
+        </div> */}
       </motion.div>
     </section>
   );
