@@ -82,7 +82,7 @@ export default function Hero() {
           className="text-sm md:text-2xl text-gray-300 md:w-3/4"
           variants={children}
         >
-          I am software engineer, dedicated to crafting exceptional digital
+          I am a software engineer, dedicated to crafting exceptional digital
           experiences while occasionally delving into design. My primary focus
           lies in the development of accessible, human-centered products,
           prioritizing user satisfaction and inclusivity at every stage of the
